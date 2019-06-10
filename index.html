@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CPF</title>
+    <link rel="stylesheet" type="text/css" href="style/w3.css">
+</head>
+<body>
+<div class="w3-container w3-teal">
+    <h2>UTILS</h2>
+</div>
+<form class="w3-container w3-card-4">
+    <div class="w3-row">
+        <div id="output"></div>
+        <div class="w3-half w3-margin">
+            <label class="w3-text-grey">CPF</label>
+            <input id="cpfInput" class="w3-input w3-border" name="valor" type="text" required="required">
+        </div>
+    </div>
+</form>
+<div class="w3-row w3-margin">
+    <button class="w3-btn w3-padding w3-teal" id="btn_gerar" onclick="generate()">Gerar CPF</button>
+    <button class="w3-btn w3-padding w3-teal" id="btn_verificar" onclick="check()">Verificar CPF</button>
+</div>
+
+<!-- SCRIPTS -->
+<script src="scripts/string-mask.js"></script>
+<script src="scripts/app.js"></script>
+
+</body>
+</html>
